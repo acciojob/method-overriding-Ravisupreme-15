@@ -3,14 +3,11 @@ package com.driver;
 public class Main {
 
     public static class A {
-
-
         public String meth(){
 
-            return "Invoking method from class a";
+            return "Invoking method from class Agg";
         }
     }
-
     public static class B extends A{
 
       public String meth(){
@@ -18,19 +15,12 @@ public class Main {
       }
 
     }
-
-
-
     public static void main(String[] args) {
-
-          B b = new B();
-
-
+        // before overiden the method
+         B b = new B();
           b.meth();
-
-
+          // after overiden the method
           B b1 = new B();
-
           b1.meth();
 
     }
