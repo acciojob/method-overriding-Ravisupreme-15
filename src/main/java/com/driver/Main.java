@@ -13,7 +13,9 @@ public class Main {
 
     public static class B extends A{
 
-
+      public String meth(){
+          return "Method is overridden in Extended class B";
+      }
 
     }
 
@@ -25,7 +27,9 @@ public class Main {
           System.out.println(b.meth());
 
 
+          B b1 = new B();
 
+          System.out.println(b1.meth());
 
     }
   
